@@ -1,0 +1,32 @@
+.container {
+  color: var(--ion-color-medium);
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.publication {
+  &__title {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  &__grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  &__title-card {
+    color: var(--ion-color-medium);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+  &__image-size {
+    height: 90px;
+    width: 80px;
+  }
+  &__image-flex {
+    display: flex;
+    justify-content: center;
+  }
+}

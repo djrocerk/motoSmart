@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="previousStep()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title >
+      <div class="ion-text-wrap title">
+        {{steps[currentStep].label}}
+      </div>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [disabled]="disabledNext" (click)="nextStep()" class="layout-buttons" expand="block">Siguiente</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <router-outlet></router-outlet>
+</ion-content>
